@@ -32,7 +32,7 @@ img {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width : 320px) {
+@media screen (max-width : 700px) {
 
   .logo-text {
     display: none;
@@ -49,14 +49,14 @@ img {
   color: black;
 }
 
-@media only screen and (max-width : 320px) {
+@media (max-width : 700px) {
 
   .header-links a {
     margin: 0 15px;
   }
 }
 
-@media only screen and (min-width : 321px) {
+@media (min-width : 721px) {
 
   .header-links a {
     margin: 0 20px;
