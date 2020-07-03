@@ -1,0 +1,64 @@
+.header-container {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top: black solid 4px;
+  border-bottom: black solid 4px;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  border-top: red solid 2px;
+  border-bottom: red solid 2px;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 100% !important;
+}
+
+.logo-image {
+  position: absolute;
+}
+
+img {
+  height: 80px;
+}
+
+.logo-text {
+  margin-left: 90px;
+  font-family: 'Acme', sans-serif;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .logo-text {
+    display: none;
+  }
+}
+
+.header-links {
+  font-size: 1.2rem;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .header-links a {
+    margin: 0 15px;
+  }
+}
+
+@media only screen and (min-width : 321px) {
+
+  .header-links a {
+    margin: 0 20px;
+  }
+}

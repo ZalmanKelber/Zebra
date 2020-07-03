@@ -1,0 +1,70 @@
+.authenticate-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  min-height: 100%;
+}
+
+.authenticate-content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.authenticate-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width : 321px) {
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+}
+
+.form-row-custom {
+  margin: 10px 0;
+}
+
+.red {
+  color: red;
+}
+
+.google-signup, .email-signup, .authenticate-title {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .authenticate-title {
+    margin-top: 100px;
+  }
+  .google-signup, .email-signup {
+    margin-top: 20px;
+  }
+
+}
+
+.google-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.google-signup div {
+  text-align: center;
+}
+
+.google-signup a {
+  text-decoration: none;
+  color: white;
+}
+
+.material-icons.md-18 { font-size: 18px; }

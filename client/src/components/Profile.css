@@ -1,0 +1,297 @@
+.profile-container {
+  font-family: 'Libre Caslon Text', serif;
+}
+
+@media (min-width : 321px) {
+
+  .profile-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+  }
+
+}
+
+.user-info-display-container {
+  margin: 0 20px;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 40px 1fr auto 1fr;
+}
+
+@media (min-width : 321px) {
+
+  .user-info-display-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+  }
+
+}
+
+@media only screen and (max-width : 320px) {
+
+  .user-info-display-container {
+    margin: 100px auto 0;
+    width: 250px;
+    padding: 0 5px;
+  }
+
+}
+
+@media (min-width : 321px) {
+
+  .posts-display-container {
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-rows: 140px 1fr auto 1fr;
+    width: 400px;
+  }
+
+}
+
+@media only screen and (max-width : 320px) {
+
+  .posts-display-container {
+    width: 100%;
+    padding: 5px;
+    margin-top: 60px;
+  }
+
+}
+
+.user-info-display {
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-area {
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.image-holder-outer {
+  border: 2px solid black;
+}
+
+.image-holder-inner {
+  border: 1px solid white;
+}
+
+.image-holder-inner canvas {
+  border: 2px solid black;
+  width: 90px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.username-display {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.location-display {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.red-italic {
+  font-style: italic;
+  font-size: 0.8em;
+  color: red;
+}
+
+.bio-display {
+  text-align: justify;
+  text-indent: 20px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: black;
+}
+
+.red-bar {
+  background-color: red;
+  color: red;
+  font-size: 0.8em;
+}
+
+.followers-display, .edit-options {
+  display: flex;
+  justify-content: center;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 90px 115px 1fr;
+  height: 1.5em;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: 80px 80px 1fr;
+    height: 1.5em;
+  }
+
+}
+
+.profile-container a, .profile-container label, .profile-container button {
+  color: red;
+  font-size: 0.8em;
+  margin: 0 5px;
+}
+
+.material-icons.md-12 {
+  font-size: 12px;
+}
+
+.profile-container button {
+  background: transparent;
+  border: none !important;
+}
+
+label:hover, button:hover {
+  cursor: pointer;
+}
+
+form input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.posts-display {
+  grid-row: 3 / 4;
+  margin-bottom: 100px;
+}
+
+@media (min-width : 321px) {
+
+  .post-display {
+    max-width: 400px;
+  }
+
+}
+
+@media only screen and (max-width : 320px) {
+
+  .post-display {
+    width: 100vw;
+    padding: 0 5px;
+  }
+
+}
+
+.add-post {
+  margin-left: 65px;
+}
+
+.post-options {
+  display: flex;
+}
+
+.one-post {
+  display: grid;
+  grid-template-columns: 40px 25px 1fr;
+  grid-template-rows: auto 1fr;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .one-post {
+    max-width: 100%;
+  }
+
+}
+
+.post-photo {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.post-photo canvas {
+  width: 40px;
+  border: black solid 2px;
+}
+
+.post-date {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  float: left;
+  text-align: justify;
+}
+
+.post-content span {
+  display: inline;
+}
+
+.initial {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  float: left;
+  padding: 0 0.5em 0 0;
+}
+
+.post-text {
+  margin-bottom: 15px;
+}
+
+.post-text a {
+  font-size: 1em;
+  color: black;
+  margin-left: -4px;
+}
+
+.post-text a:hover {
+  color: maroon;
+}
+
+.post-content .edit-options {
+  justify-content: flex-start;
+}
+
+.post-content .edit-options a {
+  margin-left: 0;
+}
+
+.lighter {
+  opacity: 0.5;
+}
+
+.edit-options a {
+  margin-right: 20px;
+}
+
+.comments-display {
+  font-size: 0.8em;
+  padding: 5px;
+  margin-top: 20px;
+  border-left: black solid 2px;
+  padding-left: 5px;
+}
+
+.comments-display .one-post {
+  margin-top: 20px;
+}
+
+.load-posts {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 1.2rem;
+}

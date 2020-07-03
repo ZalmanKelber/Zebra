@@ -1,0 +1,31 @@
+.search {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Libre Caslon Text", serif;
+}
+
+.search a {
+  text-decoration: none !important;
+  color: red;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.search input {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width : 320px) {
+
+  .search input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}

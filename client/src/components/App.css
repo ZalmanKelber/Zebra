@@ -1,0 +1,21 @@
+body {
+  overscroll-behavior: none;
+  min-height: 100vh;
+}
+
+canvas:hover {
+  cursor: pointer;
+}
+
+.must-verify {
+  margin-top: 30vh;
+  text-align: center;
+  padding: 0 10px 100px;
+}
+.must-verify h1, .must-verify h2, .must-verify a {
+  font-family: "Acme", sans-serif;
+}
+
+.must-verify a {
+  color: red;
+}
