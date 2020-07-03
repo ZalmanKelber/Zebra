@@ -2,7 +2,7 @@
   font-family: 'Libre Caslon Text', serif;
 }
 
-@media (min-width : 321px) {
+@media screen and (min-width : 701px) {
 
   .profile-container {
     display: grid;
@@ -18,7 +18,7 @@
   grid-template-rows: 40px 1fr auto 1fr;
 }
 
-@media (min-width : 321px) {
+@media screen and (min-width : 701px) {
 
   .user-info-display-container {
     position: sticky;
@@ -29,7 +29,7 @@
 
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 700px) {
 
   .user-info-display-container {
     margin: 100px auto 0;
@@ -39,7 +39,7 @@
 
 }
 
-@media (min-width : 321px) {
+@media screen and (min-width : 701px) {
 
   .posts-display-container {
     grid-column: 4 / 5;
@@ -50,7 +50,7 @@
 
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 700px) {
 
   .posts-display-container {
     width: 100%;
@@ -131,7 +131,7 @@
   height: 1.5em;
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 700px) {
 
   .options-grid {
     display: grid;
@@ -174,7 +174,7 @@ form input {
   margin-bottom: 100px;
 }
 
-@media (min-width : 321px) {
+@media screen and (min-width : 701px) {
 
   .post-display {
     max-width: 400px;
@@ -182,7 +182,7 @@ form input {
 
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 700px) {
 
   .post-display {
     width: 100vw;
@@ -206,7 +206,7 @@ form input {
   margin-top: 60px;
 }
 
-@media only screen and (max-width : 320px) {
+@media screen and (max-width : 700px) {
 
   .one-post {
     max-width: 100%;
