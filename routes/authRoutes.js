@@ -89,13 +89,13 @@ module.exports = app => {
   });
 
   app.get(
-    "/api/verify/:code", requireLogin,
+    "/api/verify/:code",
     async (req, res) => {
       User.findByIdAndUpdate(req.params.code, { verified: true }, function(err, user) {
           if (err)
               return done(err);
           if (user) {
-              res.redirect("/");
+              res.redirect("/verified");
           }
       }
     )

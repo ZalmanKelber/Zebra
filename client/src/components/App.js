@@ -10,6 +10,7 @@ import Signup from "./Signup";
 import Profile from "./Profile";
 import Search from "./Search";
 import List from "./List";
+import Verified from "./Verified";
 
 import "./App.css";
 
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path="/profile/:id" exact component={Profile} />
             <Route path="/search" exact component={Search} />
             <Route path="/list/:listString" exact component={List} />
+            <Route path="/verified" exact component={Verified} />
           </div>
         </BrowserRouter>
       </div>
