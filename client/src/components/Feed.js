@@ -66,6 +66,13 @@ class Feed extends Component {
           <div className="posts-display-container">
             <div className="posts-display">
             {
+              !this.state.displayedPosts && !this.state.notDisplayedPosts &&
+              <div className="one-post">
+                <div className="post-content">No posts to display.  Head to your profile to
+                create your own posts or search to find other users to follow</div>
+              </div>
+            }
+            {
               this.state.displayedPosts.map(post => {
                 return (
                   <Post

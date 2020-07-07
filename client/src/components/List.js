@@ -19,6 +19,12 @@ class List extends Component {
       return (
         <>
         {
+          !this.props.list &&
+          <div className="one-profile-display">
+            <div className="profile-name-display">no results</div>
+          </div>
+        }
+        {
           this.props.list.map(user => {
             return (
               <ProfileDisplay
