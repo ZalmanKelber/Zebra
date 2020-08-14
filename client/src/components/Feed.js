@@ -60,17 +60,26 @@ class Feed extends Component {
     });
   }
 
+  renderNoPostsMessage = () => {
+    console.log("renderNoPostsMessage called");
+    console.log(this.state.displayedPosts.length, this.state.notDisplayedPosts.length);
+    if (this.state.displayedPosts.length === 0 && this.state.notDisplayedPosts.length === 0) {
+      return (
+        <div className="one-post">
+          <div className="post-content">No posts to display.  Head to your profile to
+          create your own posts or search to find other users to follow</div>
+        </div>
+      )
+    }
+  }
+
   render() {
     return (
       <div className="profile-container">
           <div className="posts-display-container">
             <div className="posts-display">
             {
-              !this.state.displayedPosts && !this.state.notDisplayedPosts &&
-              <div className="one-post">
-                <div className="post-content">No posts to display.  Head to your profile to
-                create your own posts or search to find other users to follow</div>
-              </div>
+              this.renderNoPostsMessage()
             }
             {
               this.state.displayedPosts.map(post => {
