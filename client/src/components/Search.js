@@ -18,6 +18,7 @@ class Search extends Component {
     document.body.style.cursor = "default";
     this.setState({ showResults: true, searchQuery: ""});
   }
+
   render() {
     return (
       <>
