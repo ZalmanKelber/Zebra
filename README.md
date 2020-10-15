@@ -31,13 +31,13 @@ Otherwise, signup for your own account using your google account or by entering 
 
 What's black, white and red all over?
 
-**Zebra Media** is a social media microblogging platform for lovers of **Wikipedia** built using **React** and **Redux** and custom plain CSS.  Everytime a user writes and submits a post or a comment, that post and comment is rendered such that each word is a clickable hyperlink to a relevant Wikipedia article.  This is achieved by running searches on each word through the **Wikipedia API** in the backend API, built in **Node** and **Express**.  Users can also enclose more than one word in backticks so that the whole phrase, rather than the individual words, become the search query.
+**Zebra Media** is a social media microblogging platform for lovers of **Wikipedia** built using **React** and **Redux** and custom plain CSS.  Everytime a user writes and submits a post or a comment, that post and comment is rendered such that each word is a clickable hyperlink to a relevant Wikipedia article.  This is achieved by running searches on each word through the **Wikipedia API** in the backend API, built in **Node** and **Express**.  Users can also enclose more than one word in backticks so that the whole phrase, rather than the individual words, becomes the search query.
 
 In addition to this primary feature, Zebra Media distinguishes itself from Facebook and Twitter by allowing users to format their posts in bold and italic using a **React Quill** interface.  The posts and photos are displayed in a highly stylized three color black, red and white scheme.  The photos are displayed using a custom filter using **HTML canvas.**
 
 User data is stored in a **MongoDB** database on Atlas Cloud Storage.  For simplicity, photos (of which there is only one at any given time per user) are stored in Object form.  Standard Social Media functions are included, including liking, commenting, following and unfollowing and searching for users.  A user's feed contains all of the posts of the user and the accounts they follow, sorted by timestamp.
 
-Authentication is handled in accordance with best practices through **Google OAuth** and **Passport JS** in conjunction with **Cookie-Session.**  Additionally, emails are sent to users who do not signing with Google OAuth for them to verify their accounts using **Sendgrid.**
+Authentication is handled in accordance with best practices through **Google OAuth** and **Passport JS** in conjunction with **Cookie-Session.**  Additionally, emails are sent to users who do not sign in with Google OAuth for them to verify their accounts using **Sendgrid.**
 
 The site is responsive for mobile (phone screens are, in fact, ideal) and the Logo was designed by the developer using **Microsoft Paint.**
 
